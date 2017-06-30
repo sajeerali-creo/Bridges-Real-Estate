@@ -25,6 +25,7 @@
 			height: auto;
 		}
 	}
+
 }
 
 /* Portrait tablets and small desktops */
@@ -93,7 +94,6 @@
 		}
 	}
 	.agent-box{
-		height: 200px;
 		.overlay-agent{
 			h3{
 				line-height: 125px; 
@@ -163,6 +163,11 @@
 			margin-top: 5px;
 		}
 	}
+	.inner{
+		height:auto!important;
+		background-position: center;
+	}
+	
 }
 
 /* Landscape phones and portrait tablets */
@@ -231,7 +236,6 @@
 		}
 	}
 	.agent-box{
-		height: 200px;
 		.overlay-agent{
 			h3{
 				line-height: 125px; 
@@ -300,6 +304,18 @@
 			margin-left: 0px!important;
 			margin-top: 5px;
 		}
+	}
+	.b-x-w{
+		width:100%;
+		float:none;
+		margin-bottom: 30px;
+	}
+	.agent-detail-home{
+		margin-bottom: 30px;
+	}
+	.inner{
+		height:auto!important;
+		background-position: center;
 	}
 }
 
@@ -369,7 +385,6 @@
 		}
 	}
 	.agent-box{
-		height: 200px;
 		.overlay-agent{
 			h3{
 				line-height: 125px; 
@@ -438,5 +453,17 @@
 			margin-left: 0px!important;
 			margin-top: 5px;
 		}
+	}
+	.b-x-w{
+		width:100%;
+		float:none;
+		margin-bottom: 30px;
+	}
+	.agent-detail-home{
+		margin-bottom: 30px;
+	}
+	.inner{
+		height:auto!important;
+		background-position: center;
 	}
 }

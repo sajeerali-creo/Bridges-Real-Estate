@@ -1,6 +1,6 @@
 .list-card{
 	width:100%;
-	height:340px;
+	height:385px;
 	background-color:#fff;
 	margin-bottom:20px;
 	border:1px solid #e1e1e1;
@@ -9,8 +9,8 @@
 		height: 155px;
 		overflow:hidden;
 		img{
-			width: 100%;
-			height: auto
+		    object-fit: cover;
+			min-width: 100%;
 		}
 	}
 	.property-list-details{
@@ -85,9 +85,10 @@
 	position:relative;
 	margin-bottom:20px;
 	img{
-		width: 100%;
-		height: auto;
+		object-fit: cover;
+    	min-width: 100%;
 		text-align: center;
+
 	}
 	.overlay-bx{
 		position:absolute;
@@ -122,9 +123,34 @@
 	border-radius:160px;
 	-moz-border-radius:160px;
 	-webkit-border-radius:160px;
+	.over-agent{
+		width:100%;
+		height:100%;
+		position:absolute;
+		border-radius:160px;
+		-moz-border-radius:160px;
+		-webkit-border-radius:160px;
+		background-color:rgba(0, 0, 0, 0.6);
+		opacity: 0;
+		transition: all 0.5s ease;
+		button{
+			margin: 0px auto;
+			display: block;
+			border:none;
+			height: 40px;
+			background-color:#fff;
+			padding:0px 20px;
+			margin-top: 50%;
+			
+			a{
+				color: #19223D!important;	
+			}
+		}
+	}
 	img{
-		width: auto;
-		height: 100%;
+		object-fit: cover;
+	    min-width: 100%;
+	    text-align: center;
 	}
 	.overlay-agent{
 		width: 100%;
@@ -148,13 +174,13 @@
 			-webkit-border-radius:160px;
 		}
 	}
-	&:hover{
-		opacity: 0.8;
-		cursor: pointer;
-	}
+
 
 }
 
+.agent-box:hover .over-agent{
+	opacity:initial;
+}
 .career-box{
 	width:100%;
 	height:250px;
@@ -207,3 +233,4 @@
 		}
 	}
 }
+

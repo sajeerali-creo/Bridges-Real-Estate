@@ -94,7 +94,7 @@ html[xmlns] .flexslider .slides {
   overflow: hidden;
   opacity: 0;
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.8);
+  color: #fff;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -106,16 +106,16 @@ html[xmlns] .flexslider .slides {
   font-size: 20px;
   display: inline-block;
   content: '\f2fa';
-  color: rgba(0, 0, 0, 0.8);
+  color: color: #fff;
 }
 .flex-direction-nav a.flex-next:before {
   content: '\f2fb';
 }
 .flex-direction-nav .flex-prev {
   left: -100px;
-  border: 2px solid #19223D;
+  border: 2px solid #fff;
   background-color:rgba(25, 34, 61, 0.24);
-  color: #19223D;
+  color: #fff;
   border-radius: 160px;
   -webkit-border-radius: 160px;
   -moz-border-radius: 160px;
@@ -125,9 +125,9 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav .flex-next {
   right: -50px;
   text-align: right;
-  border: 2px solid #19223D;
+  border: 2px solid #fff;
   background-color: rgba(25, 34, 61, 0.24);
-  color: #19223D;
+  color: #fff;
   border-radius: 160px;
   -webkit-border-radius: 160px;
   -moz-border-radius: 160px;
