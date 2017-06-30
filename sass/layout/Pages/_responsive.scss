@@ -317,6 +317,34 @@
 		height:auto!important;
 		background-position: center;
 	}
+	.form-bx{
+		margin-bottom: 20px;
+	}
+	.each-testimonial{
+		.user-testi{
+			width: 100%;
+		}
+		.testi-content{
+			width: 100%;
+			.name-dt{
+				width: 100%;
+			}
+			.bt-dt{
+				width: 100%;
+				margin-top: 20px;
+				button{
+					float: left;
+				}
+			}
+		}
+	}
+	.test-reviw{
+		width: 100%;
+	}
+	.property-card{
+		width: 100%;
+	}
+
 }
 
 /* Portrait phones and smaller */
@@ -465,5 +493,36 @@
 	.inner{
 		height:auto!important;
 		background-position: center;
+	}
+	.form-bx{
+		margin-bottom: 20px;
+	}
+	.each-testimonial{
+		.user-testi{
+			width: 100%;
+		}
+		.testi-content{
+			width: 100%;
+			.name-dt{
+				width: 100%;
+			}
+			.bt-dt{
+				width: 100%;
+				margin-top: 20px;
+				button{
+					float: left;
+				}
+			}
+		}
+	}
+	.test-reviw{
+		width: 100%;
+	}
+	.property-card{
+		width: 100%;
+	}
+	.action-bt ul li{
+		width: 100%;
+		margin-top: 5px;
 	}
 }
