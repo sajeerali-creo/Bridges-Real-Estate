@@ -116,7 +116,7 @@ html{
 	}
 }
 .section-gap-inner{
-	padding:30px 0px;
+	padding:30px 0px 15px 0px;
 }
 .back-link{
 	color: #19223D!important;
@@ -156,4 +156,22 @@ html{
 .big{
 	font-weight:bold;
 	color:#19223D!important;
+}
+
+.box-white{
+	width:100%;
+	background-color:#fff;
+	border:1px solid rgba(225, 225, 225, 0.73);
+	float:left;
+	margin-bottom:10px;
+	padding:20px;
+	p{
+		line-height: 20px;
+		font-size: 13px;
+	}
+	h2{
+		font-size: 16px;
+		color: #19223D;
+		font-weight: bold;
+	}
 }

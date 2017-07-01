@@ -344,6 +344,23 @@
 	.property-card{
 		width: 100%;
 	}
+	.each-project{
+		.project-image{
+			width: 100%;
+			height: 200px;
+		}
+		.project-detail{
+			width: 100%;
+		}
+	}
+	.thum-slid ul li{
+		width: 48%;
+	}
+	.plans{
+		.instalment-card{
+			width: 47%;
+		}
+	}
 
 }
 
@@ -524,5 +541,32 @@
 	.action-bt ul li{
 		width: 100%;
 		margin-top: 5px;
+	}
+	.each-project{
+		.project-image{
+			width: 100%;
+			height: 200px;
+		}
+		.project-detail{
+			width: 100%;
+		}
+	}
+	.inner-full-banner{
+		.postion-form{
+			width: 100%;
+			left: 0px;
+		}
+
+	}
+	.thum-slid ul li{
+		width: 48%;
+	}
+	.plans{
+		.instalment-card{
+			width: 100%;
+		}
+	}
+	.full-button{
+		width: 100%;
 	}
 }
