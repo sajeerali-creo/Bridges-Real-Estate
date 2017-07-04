@@ -13,6 +13,10 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 html{
 	margin:0px;
 }
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
 .heading_block{
 	h2{
 		font-size: 22px;
@@ -174,4 +178,89 @@ html{
 		color: #19223D;
 		font-weight: bold;
 	}
+}
+
+// Model
+.lean-overlay{
+	background-color:#19223D;
+}
+.modal{
+	background-color:#fff!important;
+}
+.modal-content{
+
+	h4{
+		font-size:24px;
+		font-weight: bold;
+		color: #19223D;
+		display: block;
+		text-align: center;
+	}
+	.b-m{
+		padding-bottom:30px;
+		float: left;
+		input{
+			font-size: 13px!important;
+			color: #19223D!important;
+		}
+		
+		textarea{
+			border:none;
+			border-bottom: 1px solid #e1e1e1 !important;
+			font-size: 13px!important;
+			color: #19223D!important;
+			margin-top: 30px;
+		}
+	}
+	button{
+		width: 100px;
+	    height: 40px;
+	    background-color: #19223D;
+	    color: #fff;
+	    border: none;
+	    transition: all 0.5s ease;
+	    text-transform: uppercase;
+	    letter-spacing: 1px;
+	    margin-top: 20px;
+	    float:right;
+	    a{
+	    	color: #fff;
+	    	display: block;
+	    }
+	}
+	.cancel{
+		margin-right: 10px;
+		background:none!important;
+		border:1px solid  #19223D!important;
+		a{
+			color: #19223D!important;
+		}
+	}
+
+}
+
+.modal-content input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #19223D;
+}
+.modal-content input::-moz-placeholder { /* Firefox 19+ */
+  color: #19223D;
+}
+.modal-content input::-ms-input-placeholder { /* IE 10+ */
+  color: #19223D;
+}
+.modal-content input::-moz-placeholder { /* Firefox 18- */
+  color: #19223D;
+}
+
+.modal-content textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #19223D;
+}
+.modal-content textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #19223D;
+}
+.modal-content textarea::-ms-input-placeholder { /* IE 10+ */
+  color: #19223D;
+}
+.modal-content textarea::-moz-placeholder { /* Firefox 18- */
+  color: #19223D;
 }
