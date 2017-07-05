@@ -3,7 +3,7 @@
 <head>
 	<title>Test</title>
 	<!-- style -->
-	<link rel="stylesheet" type="text/css" href="stylesheets/materialize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
@@ -12,6 +12,26 @@
 	<link rel="stylesheet" href="stylesheets/flexslider.css" type="text/css">
 </head>
 <body>
+
+ <!-- Make Enquiry Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Make Enquiry</h4>
+      <div class="b-m">
+      	<form>
+      		<div class="col l12 m12 s12"><input type="text" placeholder="Name" name=""></div>
+      		<div class="col l12 m12 s12"><input type="text" placeholder="Mobile Number" name=""></div>
+      		<div class="col l12 m12 s12"><input type="text" placeholder="E-mail" name=""></div>
+      		<div class="col l12 m12 s12"><textarea placeholder="Message"></textarea></div>
+      		<div class="col l12 m12 s12">
+      			<button class="waves-effect waves-light"><a href="#">Send</a></button>
+      			<button class="cancel modal-close waves-effect waves-light"><a href="#">Cancel</a></button>
+      		</div>
+      	</form>
+      </div>
+    </div>
+  </div>
+
 
 <!-- Quick Contact -->
 <div class="quick-contact">
@@ -110,12 +130,15 @@
 			</div>
 		</div>
 		</header>
-		<div class="logo"><img src="images/logo.svg"></div>
-		<h1>FIND YOUR <strong>DREAM HOMES</strong></h1>
-		<br>
-		<a href="#project-hero">
-			<i class="zmdi zmdi-chevron-down"></i>
-		</a>
+		<div class="banner-text">
+			<div class="logo"><img src="images/logo.svg"></div>
+			<h1>FIND YOUR <strong>DREAM HOMES</strong></h1>
+			<br>
+			<a href="#tst">
+				<i class="zmdi zmdi-chevron-down btn-floating pulse"></i>
+				<span id="tst"></span>
+			</a>
+		</div>
 	</div>
 	<div class="testimonials">
 		<div class="container">
@@ -125,18 +148,22 @@
 			    <li>
 			    	<p class="content-testi">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 			    	<h2>Thomas Miller</h2>
+			    	<span>Doun Town Village Dubai</span>
 				</li>
 				<li>
 			    	<p class="content-testi">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 			    	<h2>Thomas Miller</h2>
+			    	<span>Doun Town Village Dubai</span>
 				</li>
 				<li>
 			    	<p class="content-testi">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 			    	<h2>Thomas Miller</h2>
+			    	<span>Doun Town Village Dubai</span>
 				</li>
 				<li>
 			    	<p class="content-testi">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 			    	<h2>Thomas Miller</h2>
+			    	<span>Doun Town Village Dubai</span>
 				</li>
 			  </ul>
 			</div>
@@ -218,6 +245,10 @@
 		</div>
 </section>
 
+
+
+
+
 <!-- FEATURED PROPERTIES FOR SALE -->
 <section class="listing section-gap featured">
 	<div class="container">
@@ -232,21 +263,27 @@
 
 					<div class="col s12 l3 m6">
 						<div class="list-card">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1"><a href="#">Make Enquiry</a></button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
 							<div class="property-thumb">
 								<img src="images/l1.png">
 							</div>
 							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
@@ -254,21 +291,27 @@
 					</div>
 					<div class="col s12 l3 m6">
 						<div class="list-card">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1">Make Enquiry</button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
 							<div class="property-thumb">
 								<img src="images/l2.png">
 							</div>
 							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
@@ -276,21 +319,27 @@
 					</div>
 					<div class="col s12 l3 m6">
 						<div class="list-card">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1"><a href="#">Make Enquiry</a></button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
 							<div class="property-thumb">
 								<img src="images/l3.png">
 							</div>
 							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
@@ -298,21 +347,27 @@
 					</div>
 					<div class="col s12 l3 m6">
 						<div class="list-card">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1"><a href="#">Make Enquiry</a></button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
 							<div class="property-thumb">
 								<img src="images/l4.png">
 							</div>
 							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
@@ -325,91 +380,115 @@
 
 				<div class="col s12 l3 m6">
 					<div class="list-card">
-						<div class="property-thumb">
-							<img src="images/l5.png">
-						</div>
-						<div class="property-list-details">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1"><a href="#">Make Enquiry</a></button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
+							<div class="property-thumb">
+								<img src="images/l5.png">
+							</div>
+							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
-					</div>
+						</div>
 				</div>
 				<div class="col s12 l3 m6">
 					<div class="list-card">
-						<div class="property-thumb">
-							<img src="images/l6.png">
-						</div>
-						<div class="property-list-details">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1"><a href="#">Make Enquiry</a></button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
+							<div class="property-thumb">
+								<img src="images/l6.png">
+							</div>
+							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
-					</div>
+						</div>
 				</div>
 				<div class="col s12 l3 m6">
 					<div class="list-card">
-						<div class="property-thumb">
-							<img src="images/l7.png">
-						</div>
-						<div class="property-list-details">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1"><a href="#">Make Enquiry</a></button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
+							<div class="property-thumb">
+								<img src="images/l7.png">
+							</div>
+							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
-					</div>
+						</div>
 				</div>
 				<div class="col s12 l3 m6">
 					<div class="list-card">
-						<div class="property-thumb">
-							<img src="images/l8.png">
-						</div>
-						<div class="property-list-details">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1"><a href="#">Make Enquiry</a></button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
+							<div class="property-thumb">
+								<img src="images/l8.png">
+							</div>
+							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
-					</div>
+						</div>
 				</div>
 				</div>
 				</li>
@@ -437,21 +516,27 @@
 
 					<div class="col s12 l3 m6">
 						<div class="list-card">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1"><a href="#">Make Enquiry</a></button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
 							<div class="property-thumb">
 								<img src="images/l1.png">
 							</div>
 							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
@@ -459,21 +544,27 @@
 					</div>
 					<div class="col s12 l3 m6">
 						<div class="list-card">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1"><a href="#">Make Enquiry</a></button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
 							<div class="property-thumb">
 								<img src="images/l2.png">
 							</div>
 							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
@@ -481,21 +572,27 @@
 					</div>
 					<div class="col s12 l3 m6">
 						<div class="list-card">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1"><a href="#">Make Enquiry</a></button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
 							<div class="property-thumb">
 								<img src="images/l3.png">
 							</div>
 							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
@@ -503,21 +600,27 @@
 					</div>
 					<div class="col s12 l3 m6">
 						<div class="list-card">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1"><a href="#">Make Enquiry</a></button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
 							<div class="property-thumb">
 								<img src="images/l4.png">
 							</div>
 							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
@@ -530,91 +633,115 @@
 
 				<div class="col s12 l3 m6">
 					<div class="list-card">
-						<div class="property-thumb">
-							<img src="images/l5.png">
-						</div>
-						<div class="property-list-details">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1"><a href="#">Make Enquiry</a></button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
+							<div class="property-thumb">
+								<img src="images/l5.png">
+							</div>
+							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
-					</div>
+						</div>
 				</div>
 				<div class="col s12 l3 m6">
 					<div class="list-card">
-						<div class="property-thumb">
-							<img src="images/l6.png">
-						</div>
-						<div class="property-list-details">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1"><a href="#">Make Enquiry</a></button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
+							<div class="property-thumb">
+								<img src="images/l6.png">
+							</div>
+							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
-					</div>
+						</div>
 				</div>
 				<div class="col s12 l3 m6">
 					<div class="list-card">
-						<div class="property-thumb">
-							<img src="images/l7.png">
-						</div>
-						<div class="property-list-details">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1"><a href="#">Make Enquiry</a></button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
+							<div class="property-thumb">
+								<img src="images/l7.png">
+							</div>
+							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
-					</div>
+						</div>
 				</div>
 				<div class="col s12 l3 m6">
 					<div class="list-card">
-						<div class="property-thumb">
-							<img src="images/l8.png">
-						</div>
-						<div class="property-list-details">
+
+							<div class="over-card">
+								<ul>
+									<li><i class="icon-bed"></i>&nbsp;Villas</li>
+									<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
+									<li><i class="icon-bed"></i>&nbsp;4 Bed</li>
+									<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
+									<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
+									<li><i class="zmdi zmdi-file-text"></i>&nbsp;3 Study</li>
+								</ul>
+								<button class="mk-e modal-trigger waves-effect waves-light" data-target="modal1"><a href="#">Make Enquiry</a></button>
+								<button class="view-b"><a href="#">View Detail</a></button>
+							</div>
+
+							<div class="property-thumb">
+								<img src="images/l8.png">
+							</div>
+							<div class="property-list-details">
 							<h3>4552 LYNN AVENUE</h3>
 							<span><i class="zmdi zmdi-pin"></i>&nbsp;United Arab Emirates</span>
-							<ul>
-								<li><i class="icon-1"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bed"></i>&nbsp;4800 sq ft</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-								<li><i class="zmdi zmdi-group"></i>&nbsp;2 Maid</li>
-								<li><i class="icon-bath"></i>&nbsp;3 Baths</li>
-							</ul>
 							<div class="button-block">
-								<button class="waves-effect waves-light"><a href="#">More Details</a></button>
 								<button class="price">$1,500</button>
 							</div>
 						</div>
-					</div>
+						</div>
 				</div>
 				</div>
 				</li>
@@ -776,35 +903,41 @@
 		</div>
 		<div class="row svs">
 		    <div class="col s12 l12 m12">
-		    	<div class="b-x-w">
+		    	<div class="col s12 l4 m4">
 			    	<div class="icon-box">
 			    		<i class="zmdi zmdi-city-alt"></i>
 			    	</div>
 			    	<h3>Renting</h3>
 		    	</div>
-		    	<div class="b-x-w">
+		    	<div class="col s12 l4 m4">
 			    	<div class="icon-box">
 			    		<i class="zmdi zmdi-money-box"></i>
 			    	</div>
 			    	<h3>Investment Advice</h3>
 		    	</div>
-		    	<div class="b-x-w">
+		    	<div class="col s12 l4 m4">
 			    	<div class="icon-box">
 			    		<i class="zmdi zmdi-view-dashboard"></i>
 			    	</div>
 			    	<h3>Portfolio Management</h3>
 		    	</div>
-		    	<div class="b-x-w">
+		    	<div class="col s12 l4 m4">
 			    	<div class="icon-box">
 			    		<i class="zmdi zmdi-view-quilt"></i>
 			    	</div>
 			    	<h3>Project Management</h3>
 		    	</div>
-		    	<div class="b-x-w">
+		    	<div class="col s12 l4 m4">
 			    	<div class="icon-box">
 			    		<i class="zmdi zmdi-city"></i>
 			    	</div>
 			    	<h3>Property Management</h3>
+		    	</div>
+		    	<div class="col s12 l4 m4">
+			    	<div class="icon-box">
+			    		<i class="zmdi zmdi-city"></i>
+			    	</div>
+			    	<h3>Title Icon</h3>
 		    	</div>
 		    </div>
 		  
@@ -966,11 +1099,25 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="col s12 l4 m12 border-right links-f">
+			<div class="col s12 l4 m12 border-right ">
 				<img src="images/logo.svg">
 				<br>
+				<h2>ADDRESS</h2>
+				<p>P.O. Box 261036, Plot No. S 20119,<br> Jebel Ali Free Zone (South),<br> Dubai. United Arab Emirates.</p>
+				<p>Opening Hours&nbsp;<strong>9:00 AM to 6:00 PM</strong></p>
+
+				<ul class="social">
+					<li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+					<li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+					<li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
+		 			<li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
+				</ul>
+				
+			</div>
+			<div class="col s12 l4 m12 border-right links-f">
 				<ul>
 				<h2>LINKS</h2>
+				<br>
 				<li><a href="#">About us</a></li>
 				<li><a href="#">Featured Properties for Sale</a></li>
 				<li><a href="#">Features Properties for Rent</a></li>
@@ -978,17 +1125,6 @@
 				<li><a href="#">List your Property</a></li>
 				<li><a href="#">Careers</a></li>
 				<li><a href="#">Contact us</a></li>
-				</ul>
-			</div>
-			<div class="col s12 l4 m12 border-right">
-				<h2>ADDRESS</h2>
-				<p>P.O. Box 261036, Plot No. S 20119,<br> Jebel Ali Free Zone (South),<br> Dubai. United Arab Emirates.</p>
-				<br>
-				<ul class="social">
-					<li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
-					<li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
-					<li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
-		 			<li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
 				</ul>
 				
 			</div>
@@ -1034,13 +1170,21 @@
 
 <!-- Scripts -->
 <!--Import jQuery before materialize.js-->
-<script type="text/javascript" src="js/jquary.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 <script src='js/css3-animate-it.js'></script>
 
 <!-- Push Nav Mobile -->
 <script type="text/javascript">
   $(".button-collapse").sideNav();
+</script>
+
+<!-- Model -->
+<script>
+$(document).ready(function() {
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
+});
 </script>
 
 <!-- Anchore -->

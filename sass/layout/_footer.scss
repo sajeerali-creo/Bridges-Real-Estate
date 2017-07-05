@@ -4,7 +4,7 @@ footer{
 	background-image:url(../images/footer-bg.png);
 	background-size:cover;
 	img{
-		height: 100px;
+		height: 120px;
 		width: auto;
 		margin-bottom: 20px;
 	}
@@ -25,19 +25,21 @@ footer{
 		line-height: 24px;
 		color: rgba(255, 255, 255, 0.61);
 		font-size: 13px;
+		strong{
+				color:#fff!important;
+			}
 	}
 	.social{
 		padding-top:10px;
 		li{
-			display: block;
-			height: 40px;
-			width: 40px;
+			display: inline-block;
+			height: 35px;
+			width: 35px;
 			border-radius: 160px;
 			-webkit-border-radius: 160px;
 			-moz-border-radius: 160px;
 			background-color:#fff;
 			text-align: center;
-			line-height: 30px;
 			transition: all 0.5s ease;
 			margin:5px 0px;
 			&:hover{
@@ -45,6 +47,7 @@ footer{
 			}
 			i{
 				color: #303B5A;
+				line-height: 35px;
 			}
 		}
 	}
@@ -62,6 +65,7 @@ footer{
 			text-align:left;
 			line-height: 50px;
 			font-size: 13px;
+
 		}
 		ul{
 			float: right;
@@ -102,7 +106,7 @@ footer{
 			list-style: none;
 			li{
 				display: block;
-				padding:5px 0px;
+				padding:8px 0px;
 				a{
 					font-size: 13px;
 					color:rgba(255, 255, 255, 0.61)!important;
