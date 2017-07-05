@@ -1,13 +1,12 @@
 .bt-normal{
 	border:none;
 	background-color:$navy;
-	height: 45px;
+	height: 40px;
 	font-size: 14px;
 	text-align: center;
-	width: 240px;
+	width: 220px;
 	color: #fff;
 	letter-spacing: 2px;
-	line-height: 45px;
 	font-weight: 600;
 	transition: all 0.5s ease;
 	a{
@@ -15,6 +14,7 @@
 		display: block;
 		width: 100%;
 		height: 100%;
+		line-height: 40px;
 	}
 	&:hover{
 		opacity: 0.8;
@@ -23,13 +23,13 @@
 .bt-normal-red{
 	border:none;
 	background-color:$red;
-	height: 45px;
+	height: 40px;
 	font-size: 14px;
 	text-align: center;
-	width: 240px;
+	width: 220px;
 	color: #fff;
 	letter-spacing: 2px;
-	line-height: 45px;
+	line-height: 40px;
 	font-weight: 600;
 	transition: all 0.5s ease;
 	a{

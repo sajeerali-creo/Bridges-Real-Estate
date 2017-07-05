@@ -1,20 +1,65 @@
 .list-card{
 	width:100%;
-	height:385px;
+	height:330px;
 	background-color:#fff;
 	margin-bottom:20px;
 	border:1px solid #e1e1e1;
+	position:relative;
+	.over-card{
+		position:absolute;
+		width: 100%;
+		height: 100%;
+		background-color:rgba(255, 255, 255, 0.85);
+		padding:15px;
+		color: #666;
+		opacity: 0;
+		transition: all 0.5s ease;
+		cursor: pointer;
+		button{
+			border:none;
+			width: 100%;
+			height: 35px;
+			margin-top: 10px;
+			a{
+				color: #fff;
+			}
+		}
+		.mk-e{
+			background-color:$navy;
+			color: #fff;
+		}
+		.view-b{
+			background-color:#F15C5C;
+			color: #fff;
+		}
+		i{
+			display: inline-block;
+			width: 30px;
+
+		}
+		ul{
+			margin-bottom: 10px;
+			padding-top:5px;
+			li{
+				color: #666;
+				padding:8px 0px;
+			}
+		}
+	}
 	.property-thumb{
 		background-color:#fff;
-		height: 155px;
+		height: 200px;
 		overflow:hidden;
 		img{
 		    object-fit: cover;
-			min-width: 100%;
+		    min-width: 100%;
+		    height: 100%!important;
 		}
 	}
 	.property-list-details{
 		padding: 10px;
+		float: left;
+		width: 100%;
 		h3{
 			font-size: 16px;
 			color: $navy;
@@ -44,37 +89,30 @@
 		}
 	}
 	.button-block{
-		border-top:1px solid #f1f1f1;
 		padding:8px 0px;
 		margin-top: 5px;
 		button{
-			display: block;
-			float: left;
-			background-color:$navy;
-			text-align: center;
-			letter-spacing: 1px;
-			text-transform: uppercase;
 			border:none;
-			height: 30px;
-			width: 50%;
-			transition: all 0.5s ease;
-			a{
-				color: #fff;
-				font-size: 12px;
-			}
-			&:hover{
-				opacity: 0.5;
-			}
 		}
 		.price{
 			background:none;
-			border:1px solid $navy;
 			color: $navy;
-			float: right;
+			float: left;
+			font-weight: bold;
+			font-size: 20px;
+			border:2px solid #f1f1f1;
+			border-radius:35px;
+			-webkit-border-radius:35px;
+			-moz-border-radius:35px;
+			padding:10px 15px;
+			margin-top: 0px!important;
 		}
 	}
 }
 
+.list-card:hover .over-card{
+	opacity:1;
+}
 
 // Community Crd
 .community-card{
@@ -120,16 +158,16 @@
 	position:relative;
 	transition: all 0.5s ease;
 	overflow:hidden;
-	border-radius:160px;
-	-moz-border-radius:160px;
-	-webkit-border-radius:160px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
 	.over-agent{
 		width:100%;
 		height:100%;
 		position:absolute;
-		border-radius:160px;
-		-moz-border-radius:160px;
-		-webkit-border-radius:160px;
+		border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
 		background-color:rgba(0, 0, 0, 0.6);
 		opacity: 0;
 		transition: all 0.5s ease;

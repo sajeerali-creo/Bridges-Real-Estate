@@ -1,0 +1,241 @@
+.each-project{
+	width:100%;
+	margin-bottom:20px;
+	background-color:#fff;
+	border:1px solid rgba(225, 225, 225, 0.73);
+	float:left;
+	margin-bottom:20px;
+	.project-image{
+		width:calc(100% - 485px);
+		float: left;
+		background-color:#e1e1e1;
+		height: 365px;
+		overflow: hidden;
+		img{
+			min-width: 100%;
+			object-fit: cover;
+		}
+	}
+	.project-detail{
+		width: 485px;
+		float: left;
+		padding:20px;
+		h1{
+			font-size:22px;
+			font-weight: bold;
+			color: $navy;
+			display: block;
+			padding-bottom:20px;
+		}
+		span{
+			display: block;
+			color: $navy;
+			padding:8px 0px;
+			i{
+				display: inline-block;
+				width: 20px;
+			}
+		}
+		strong{
+			display: inline-block;
+			width: 150px;
+		}
+		button{
+		    display: block;
+		    border: none;
+		    float: left;
+		    height: 40px;
+		    background-color: #F15C5C;
+		    padding: 0px 30px;
+		    margin-top: 20px;
+		    margin-right:5px;
+		    transition: all 0.5s ease;
+		    a{
+		    	color: #fff;
+		    }
+		    &:hover{
+		    	opacity: 0.5;
+		    }
+		}
+		.navy-bt{
+			background-color:$navy!important;
+		}
+	}
+}
+
+.inner-full-banner{
+	width:100%;
+	height:385px;
+	overflow:hidden;
+	position:relative;
+	img{
+		min-width: 100%;
+		object-fit: cover;
+	}
+	.postion-form{
+		position:absolute;
+		width: 400px;
+		height: 100%;
+		background-color:rgba(0, 0, 0, 0.56);
+		right: 8%;
+		padding:20px;
+		h2{
+			font-size:18px;
+			color: #fff;
+			font-weight: 600;
+		}
+	}
+	input{
+		font-size: 13px!important;
+		color: $navy;
+	}
+	
+	textarea{
+		border:none;
+		border-bottom: 1px solid #e1e1e1 !important;
+		font-size: 13px!important;
+		color: $navy!important;
+		margin-top: 30px;
+	}
+	button{
+		width: 100%;
+	    height: 40px;
+	    background-color: #F15C5C;
+	    color: #fff;
+	    border: none;
+	    transition: all 0.5s ease;
+	    text-transform: uppercase;
+	    letter-spacing: 1px;
+	    margin-top: 20px;
+	    a{
+	    	color: #fff;
+	    	display: block;
+	    }
+	}
+}
+
+.thum-slid{
+	ul{
+		li{
+			display: inline-block;
+			width: 19.36%;
+			height: 140px;
+			overflow: hidden;
+			float: left;
+			margin:5px 3px;
+			img{
+				min-width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+.plans{
+	padding:20px;
+	background-color:#F1F1F1;
+	margin-top:20px;
+	float:left;
+	width:100%;
+	.instalment-card{
+		width: 19%;
+		height: 200px;
+		background-color:#fff;
+		border:1px solid rgba(225, 225, 225, 0.73);
+		float:left;
+		margin: 5px 5px;
+		text-align: center;
+		.top{
+			padding:20px 0px;
+			h1{
+				font-size: 24px;
+				font-weight: bold;
+				color: $navy;
+			}
+			span{
+				color: $navy;
+				text-align: center;
+				padding:5px 0px;
+				display: block;
+			}
+		}
+		.percentage{
+			background-color:$navy;
+			color: #fff;
+			font-size:30px;
+			padding:20px 0px;
+			font-weight: bold;
+		}
+		i{
+			font-size: 13px;
+			display: block;
+			padding:10px 0px;
+			color: $navy;
+		}
+	}
+	.plan-footer{
+		text-align: center;
+		color: $navy;
+		padding-top:10px;
+		display: block;
+		width: 100%;
+		float: left;
+	}
+}
+.half-button{
+	width: 100%;
+    height: 45px;
+    background-color: #F15C5C;
+    color: #fff;
+    border: none;
+    transition: all 0.5s ease;
+    margin-top: 20px;
+    font-weight: 500;
+    a{
+    	color: #fff;
+    	display: block;
+    }
+}
+.half-button-navy{
+	width: 100%;
+    height: 45px;
+    background-color: $navy;
+    color: #fff;
+    border: none;
+    transition: all 0.5s ease;
+    margin-top: 20px;
+    font-weight: 500;
+    a{
+    	color: #fff;
+    	display: block;
+    }
+}
+
+.full-button{
+	width: 35%;
+    height: 45px;
+    background-color: #2EC4B6;
+    color: #fff;
+    border: none;
+    transition: all 0.5s ease;
+    display: block;
+    margin: 20px auto;
+    font-weight: 500;
+    a{
+    	color: #fff;
+    	display: block;
+    }
+}
+
+.agent-det{
+	h2{
+		display: block;
+		width: 100%;
+		font-size: 16px;
+		color: $navy;
+		font-weight: bold;
+		padding-bottom:10px;
+		border-bottom:1px solid #e1e1e1;
+		margin-bottom: 30px;
+	}
+}

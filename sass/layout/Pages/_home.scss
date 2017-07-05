@@ -1,24 +1,27 @@
 .banner{
-	height:100vh;
+	height:auto;
 	background-color:$navy;
 	position:relative;
 	background-image:url(../images/banner.png);
 	background-size:cover;
+	.banner-text{
+		width: 100%;
+		height: 100vh;
+	}
 	.logo{
 		width: 220px;
 		margin:0px auto;
-		padding-top: 5%;
+		padding-top: 17%;
 		margin-bottom: 30px;
 	}
 	h1{
 		display: block;
 		text-align: center;
 		color: $white;
-		font-size: 34px;
+		font-size: 35px;
+		font-family: 'Meie Script', cursive;
 		color: #fff;
 		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 1px;
 		font-weight: 400;
 		strong{
 			font-weight: bold;
@@ -30,7 +33,7 @@
 		display: block;
 		width: 45px;
 		height: 45px;
-		margin: 20px auto;
+		margin: 40px auto;
 		color: #fff;
 		border: 2px solid #fff;
 		border-radius:160px;
@@ -39,15 +42,27 @@
 		text-align: center;
 		line-height: 43px;
 		font-size: 25px;
+		background:rgba(255, 255, 255, 0.2);
 	}
 	.testimonials{
-		position: absolute;
+		// position: absolute;
 		bottom: 0px;
-		height: 220px;
+		height: 270px;
+		padding-top:10px;
 		background-color:rgba(25, 34, 61, 0.56);
 		width: 100%;
+		span{
+			display: block;
+			text-align: center;
+			font-size:13px;
+			padding-top:5px;
+		}
 		.flexslider{
-			margin: 30px 0 20px;
+			padding: 30px 0 20px;
+			margin: 0px!important;
+			.flex-viewport{
+				padding-bottom: 10px;
+			}
 			.content-testi{
 				padding:0px 85px!important;
 				line-height: 24px;
@@ -66,6 +81,7 @@
 			}
 			.flex-control-nav {
 				display: block!important;
+				bottom: -20px!important;
 			}
 		}
 		.flex-direction-nav .flex-prev {
@@ -88,7 +104,7 @@ header{
 	left:0px;
 	width:100%;
 	z-index:666;
-	background-color:rgba(25, 34, 61, 0.9);
+	background-color:rgba(25, 34, 61, 0.5);
 	height:auto;
 	display:none;
 }
@@ -146,10 +162,10 @@ header{
 				height: 45px;
 				font-size: 14px;
 				text-align: center;
+				line-height: 40px;
 				width: 190px;
 				color: #fff;
 				letter-spacing: 2px;
-				line-height: 45px;
 				font-weight: 600;
 				transition: all 0.5s ease;
 				a{
@@ -202,7 +218,7 @@ header{
 		margin:0px!important;
 	}
 	.flex-viewport{
-		height: 385px;
+		height: 330px;
 	}
 	.flex-direction-nav{
 		a{
