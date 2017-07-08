@@ -13,6 +13,75 @@
 </head>
 <body class="inner-bg">
 
+ <!-- Make Enquiry Modal Structure -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Make Enquiry</h4>
+      <div class="b-m">
+      	<form>
+      		<div class="col l12 m12 s12"><input type="text" placeholder="Name" name=""></div>
+      		<div class="col l12 m12 s12"><input type="text" placeholder="Mobile Number" name=""></div>
+      		<div class="col l12 m12 s12"><input type="text" placeholder="E-mail" name=""></div>
+      		<div class="col l12 m12 s12"><textarea placeholder="Message"></textarea></div>
+      		<div class="col l12 m12 s12">
+      			<button class="waves-effect waves-light"><a href="#">Send</a></button>
+      			<button class="cancel modal-close waves-effect waves-light"><a href="#">Cancel</a></button>
+      		</div>
+      	</form>
+      </div>
+    </div>
+  </div>
+
+
+<!-- filter -->
+<div class="filter">
+	<a class="modal-trigger" href="#modal1"><img src="images/filter.svg"></a>
+</div>
+ 
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Flter</h4>
+      <div class="filters">
+      	 <div class="input-field col s12">
+		    <select multiple>
+		      <option value="" selected>Property Type</option>
+		      <option value="1">Apartment</option>
+		      <option value="2">Villas</option>
+		      <option value="3">Residential</option>
+		      <option value="4">Retail</option>
+		      <option value="5">Official</option>
+		      <option value="6">Commercial</option>
+		    </select>
+		  </div>
+		    <p class="range-field">
+		      <span>Bed Room</span>
+		      <input type="range" id="test5" min="0" max="100" />
+		    </p>
+
+		    <p class="range-field">
+		      <span>Budget</span>
+		      <input type="range" id="test6" min="0" max="10000" />
+		    </p>
+
+		    <p class="range-field">
+		      <input type="text" placeholder="Size" />
+		    </p>
+
+		    <button><a href="#">Search</a></button>
+		    <button class="cancel-b modal-close"><a href="#">Cncel</a></button>
+
+
+      </div>
+    </div>
+   
+  </div>
+
+
+
+
+
 <!-- Side Navigtion -->
 <ul id="slide-out" class="side-nav">
 	<li><div class="userView">
@@ -28,11 +97,11 @@
 	<li><a href="team.html">&nbsp;&nbsp;TEAMS</a></li>
 	<li><a href="contact.html">&nbsp;&nbsp;CONTACT</a></li>
 	<li><a href="buy.html">BUY</a></li>
-	<li><a href="#">RENT</a></li>
+	<li><a href="rent.html">RENT</a></li>
 	<li><a href="project.html">PROJECT</a></li>
 	<li><a href="property-owner.html">PROPERTY OWNER</a></li>
-	<li><a href="#">INFO GUIDE</a></li>
-	<li><a href="#">CAREER</a></li>
+	<li><a href="infoguide.html">INFO GUIDE</a></li>
+	<li><a href="career.html">CAREER</a></li>
 </ul>
 
 
@@ -57,8 +126,8 @@
 							<li><a href="#">RENT</a></li>
 							<li><a href="project.html">PROJECT</a></li>
 							<li><a href="property-owner.html">PROPERTY OWNER</a></li>
-							<li><a href="#">INFO GUIDE</a></li>
-							<li><a href="#">CAREER</a></li>
+							<li><a href="infoguide.html">INFO GUIDE</a></li>
+							<li><a href="career.html">CAREER</a></li>
 						</ul>
 						<!-- Mobile Menu -->
 						<a href="#" data-activates="slide-out" class="button-collapse right mob-menu">
@@ -128,6 +197,25 @@
 </section>
 
 <section class="inner-full-banner">
+
+<div class="over-innr-pg">
+	<div class="project-inner">
+		<div class="top-over-lay">
+			<div class="project-detail">
+				<h1>Park Heights Tower1</h1>
+				<span><i class="zmdi zmdi-pin"></i>&nbsp;Location: Downtown Dubai</span>
+				<span><i class="zmdi zmdi-aspect-ratio-alt"></i>&nbsp;Developer: Emaar Properties</span>
+				<span><i class="zmdi zmdi-widgets"></i>&nbsp;Property Type: Full & Half Floors Only</span>
+				<span><i class="icon-bed"></i>&nbsp;No of Bed Rooms: 3</span>
+				<span><i class="zmdi zmdi-money-box"></i>&nbsp;Starting Price: 2,600</span>
+				<span><i class="zmdi zmdi-calendar-alt"></i>&nbsp;Completion Date: 12 Jan 2017</span>
+				<br>
+				<button class="waves-effect waves-light"><a href="#">VIEW DETAILS</a></button>
+				<button class="navy-bt modal-trigger waves-effect waves-light" data-target="modal2"><a href="#">Make Enquiry</a></button>
+			</div>
+		</div>
+	</div>
+	
 	<div class="postion-form">
 		<h2>Quick Enquiry</h2>
 		<form>
@@ -137,6 +225,7 @@
 			<div class="bloc-f"><textarea placeholder="Message"></textarea></div>
 			<div class="bloc-f"><button><a href="#">SUBMIT</a></button></div>
 		</form>
+	</div>
 	</div>
 	<img src="images/project1.png">
 </section>
@@ -243,7 +332,7 @@
 
 
 			<div class="col s12 l12 m12">
-				<button class="full-button modal-trigger waves-effect waves-light" data-target="modal1">Make Enquiry</button>
+				<button class="full-button modal-trigger waves-effect waves-light" data-target="modal2">Make Enquiry</button>
 			</div>
 
 
@@ -500,6 +589,10 @@
 <script type="text/javascript">
   $(".button-collapse").sideNav();
 </script>
+<script type="text/javascript">
+	 $('.tap-target').tapTarget('open');
+  $('.tap-target').tapTarget('close');
+</script>
 
 
  <script>
@@ -522,6 +615,24 @@ $(document).ready(function() {
 	 $(document).ready(function() {
 	 $('select').material_select();
 	});
+</script>
+
+<script type="text/javascript">
+$(function(){
+var slider = document.getElementById('test5');
+noUiSlider.create(slider, {
+ start: [20, 80],
+ connect: true,
+ step: 1,
+ range: {
+   'min': 0,
+   'max': 100
+ },
+ format: wNumb({
+   decimals: 0
+ })
+});
+})
 </script>
 
 

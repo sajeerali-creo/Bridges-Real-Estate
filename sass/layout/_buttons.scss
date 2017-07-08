@@ -46,3 +46,22 @@
 	width:auto!important;
 	padding:0px 25px;
 }
+
+.bt-file{
+	float: left;
+    height: 40px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #fff!important;
+    background-color: $navy;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    -ms-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+    width: 100px;
+    margin-top: 10px;
+}

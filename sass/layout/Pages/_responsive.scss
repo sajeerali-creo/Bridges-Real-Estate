@@ -4,6 +4,11 @@
 	.mob-menu{
 		display:none;
 	}
+	.agent-card{
+		.agent-image{
+			height: 170px;
+		}
+	}
 }
 
 /* Landscape tablets and medium desktops */
@@ -25,6 +30,12 @@
 			height: auto;
 		}
 	}
+	.agent-card{
+		.agent-image{
+			height: 170px;
+		}
+	}
+
 
 }
 
@@ -166,6 +177,11 @@
 	.inner{
 		height:auto!important;
 		background-position: center;
+	}
+	.agent-card{
+		.agent-image{
+			height: 170px;
+		}
 	}
 	
 }
@@ -363,6 +379,27 @@
 	}
 	.modal{
 		width:100%!important;
+	}
+	.project-inner{
+		width: 100%!important;
+	}
+	.inner-full-banner{
+		height: auto!important;
+		overflow: visible!important;
+		.postion-form{
+			background-color:#000;
+			width: 100%;
+		}
+	}
+	.over-innr-pg{
+		position:static!important;
+		background-color:$navy!important;
+		.project-inner{
+			background-color:$navy!important;
+			.top-over-lay{
+				width: 100%!important;
+			}
+		}
 	}
 
 }
@@ -574,5 +611,25 @@
 	}
 	.modal{
 		width:100%!important;
+	}
+	.project-inner{
+		width: 100%!important;
+	}
+	.inner-full-banner{
+		height: auto!important;
+		overflow: visible!important;
+		.postion-form{
+			background-color:#000;
+		}
+	}
+	.over-innr-pg{
+		position:static!important;
+		background-color:$navy!important;
+		.project-inner{
+			background-color:$navy!important;
+			.top-over-lay{
+				width: 100%!important;
+			}
+		}
 	}
 }
