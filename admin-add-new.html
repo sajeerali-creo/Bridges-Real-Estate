@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<!-- style -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/materialize.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+  <div class="logo"><i><img src="images/logo.svg"></i></div>
+  <div class="logout"><a href="#"><i class="zmdi zmdi-power"></i></a></div>
+</header>
+
+<!-- Main Area-->
+<div class="main-sec">
+ <!--  Menus -->
+  <div class="side-menus">
+    <ul>
+      <li><a href="#" class="active">Menu One</a></li>
+      <li><a href="#">Menu One</a></li>
+      <li><a href="#">Menu One</a></li>
+      <li><a href="#">Menu One</a></li>
+      <li><a href="#">Menu One</a></li>
+      <li><a href="#">Menu One</a></li>
+      <li><a href="#">Menu One</a></li>
+      <li><a href="#">Menu One</a></li>
+      <li><a href="#">Menu One</a></li>
+      <li><a href="#">Menu One</a></li>
+    </ul>
+  </div>
+
+  <!-- Body area -->
+  <div class="main-area">
+  <!-- Header -->
+    <div class="header-all-section">
+      <div class="title-full">
+        <h2>Add New Community</h2>
+      </div>
+    </div>
+
+    <!-- form -->
+    <div class="add-new-form">
+      <form>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name2" type="text" class="validate">
+            <label class="active" for="first_name2">Location Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="first_name2" type="text" class="validate">
+            <label class="active" for="first_name2">Transportion</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Description</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Agent Details</label>
+          </div>
+        </div>
+        <div class="file-field input-field padd-10-0">
+            <div class="btn normal-bt">
+              <span>File</span>
+              <input type="file" multiple>
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text" placeholder="Upload Image">
+            </div>
+        </div>
+
+        <div class="col s12">
+          <br>
+          <br>
+          <button class="bt-form-normal negative"><a href="index.html">Cancel</a></button>
+          <button class="bt-form-normal"><a href="#">Submit</a></button>
+        </div>
+        </form>
+              
+    </div>
+
+  </div>
+
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="js/jquary.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+ <script src="js/index.js"></script>
+<script type="text/javascript">
+  $(".button-collapse").sideNav();
+  $(".dropdown-button").dropdown();
+</script>
+</body>
+</html>
