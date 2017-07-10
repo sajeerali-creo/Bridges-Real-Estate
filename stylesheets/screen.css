@@ -512,6 +512,11 @@ body {
   border-bottom: 1px solid #e1e1e1 !important;
 }
 
+/* line 363, ../sass/layout/_base.scss */
+.border-none {
+  border: none !important;
+}
+
 /* line 1, ../sass/layout/_menu.scss */
 .menu-bar {
   padding: 10px 0px;
@@ -2733,9 +2738,10 @@ footer .links-f ul li:hover {
   width: 100%;
   height: 400px;
   float: left;
+  overflow: hidden;
 }
 
-/* line 31, ../sass/layout/Pages/_community.scss */
+/* line 32, ../sass/layout/Pages/_community.scss */
 .line-h2 h2 {
   display: block;
   width: 100%;
@@ -2792,19 +2798,175 @@ footer .links-f ul li:hover {
 /* line 40, ../sass/layout/Pages/_buy.scss */
 .image-buy-detail {
   width: 100%;
-  height: 340px;
+  height: 420px;
   background-color: #fff;
+  overflow: hidden;
 }
-/* line 44, ../sass/layout/Pages/_buy.scss */
+/* line 45, ../sass/layout/Pages/_buy.scss */
 .image-buy-detail img {
   min-width: 100%;
   object-fit: cover;
   height: 100%;
 }
 
-/* line 50, ../sass/layout/Pages/_buy.scss */
+/* line 51, ../sass/layout/Pages/_buy.scss */
 .margin-top {
   margin-top: 10px !important;
+}
+
+/* line 55, ../sass/layout/Pages/_buy.scss */
+.buy-agent-card {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid rgba(225, 225, 225, 0.73);
+  height: 420px;
+}
+/* line 60, ../sass/layout/Pages/_buy.scss */
+.buy-agent-card .agent-head {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #666;
+}
+/* line 65, ../sass/layout/Pages/_buy.scss */
+.buy-agent-card .agent-head img {
+  object-fit: cover;
+  min-width: 100%;
+  height: 100%;
+}
+/* line 71, ../sass/layout/Pages/_buy.scss */
+.buy-agent-card .agent-detail-sec {
+  padding: 15px;
+}
+/* line 73, ../sass/layout/Pages/_buy.scss */
+.buy-agent-card .agent-detail-sec h2 {
+  color: #19223D;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 78, ../sass/layout/Pages/_buy.scss */
+.buy-agent-card .agent-detail-sec span {
+  color: #999;
+  font-style: italic;
+  display: block;
+  padding: 5px 0px;
+}
+/* line 84, ../sass/layout/Pages/_buy.scss */
+.buy-agent-card .agent-detail-sec .spcial {
+  margin-bottom: 10px;
+}
+/* line 86, ../sass/layout/Pages/_buy.scss */
+.buy-agent-card .agent-detail-sec .spcial span {
+  color: #19223D;
+  font-style: normal;
+  display: block;
+  padding: 3px 0px;
+  font-weight: bold;
+}
+/* line 92, ../sass/layout/Pages/_buy.scss */
+.buy-agent-card .agent-detail-sec .spcial span strong {
+  display: inline-block;
+  font-weight: normal;
+  color: #19223D;
+}
+/* line 99, ../sass/layout/Pages/_buy.scss */
+.buy-agent-card .agent-detail-sec .bt-half {
+  width: 49%;
+  float: left;
+  height: 35px;
+  border: 1px solid #19223D;
+  color: #19223D;
+  background-color: #fff;
+}
+/* line 106, ../sass/layout/Pages/_buy.scss */
+.buy-agent-card .agent-detail-sec .bt-half a {
+  color: #19223D;
+  font-size: 12px;
+}
+/* line 111, ../sass/layout/Pages/_buy.scss */
+.buy-agent-card .agent-detail-sec .mg-right-5 {
+  margin-right: 5px;
+  background-color: #19223D !important;
+}
+/* line 114, ../sass/layout/Pages/_buy.scss */
+.buy-agent-card .agent-detail-sec .mg-right-5 a {
+  color: #fff;
+}
+/* line 118, ../sass/layout/Pages/_buy.scss */
+.buy-agent-card .agent-detail-sec .bt-number {
+  margin-top: 5px;
+  width: 100%;
+  height: 35px;
+  border: 1px solid #19223D;
+  color: #19223D;
+  background-color: #fff;
+}
+/* line 125, ../sass/layout/Pages/_buy.scss */
+.buy-agent-card .agent-detail-sec .bt-number a {
+  color: #19223D;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* line 135, ../sass/layout/Pages/_buy.scss */
+.facts {
+  height: 260px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* line 139, ../sass/layout/Pages/_buy.scss */
+.facts ul {
+  margin-top: 10px;
+}
+/* line 141, ../sass/layout/Pages/_buy.scss */
+.facts ul li {
+  display: block;
+  width: 100%;
+  color: #19223D !important;
+  padding: 10px 0px;
+  color: #19223D;
+  border-bottom: 1px solid #f1f1f1;
+}
+/* line 148, ../sass/layout/Pages/_buy.scss */
+.facts ul li i {
+  display: inline-block;
+  width: 25px;
+  color: #19223D;
+}
+/* line 153, ../sass/layout/Pages/_buy.scss */
+.facts ul li strong {
+  width: 80px;
+  display: inline-block;
+  color: #19223D;
+}
+
+/* line 162, ../sass/layout/Pages/_buy.scss */
+.aminities {
+  height: 260px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  color: #19223D;
+}
+/* line 167, ../sass/layout/Pages/_buy.scss */
+.aminities .pads {
+  padding: 10px 0px;
+}
+
+/* line 172, ../sass/layout/Pages/_buy.scss */
+.section-d button {
+  width: 120px;
+  height: 35px;
+  text-align: center;
+  color: #19223D;
+  font-weight: 600;
+  margin-top: 10px;
+  border: 1px solid #19223D;
+  background-color: #fff;
+}
+/* line 181, ../sass/layout/Pages/_buy.scss */
+.section-d button a {
+  color: #19223D;
+  font-size: 12px;
 }
 
 /* line 1, ../sass/layout/Pages/_admin.scss */
@@ -3711,279 +3873,289 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
   .over-innr-pg .project-inner .top-over-lay {
     width: 100% !important;
   }
+
+  /* line 404, ../sass/layout/Pages/_responsive.scss */
+  .image-buy-detail {
+    margin-bottom: 10px;
+  }
 }
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-  /* line 409, ../sass/layout/Pages/_responsive.scss */
+  /* line 412, ../sass/layout/Pages/_responsive.scss */
   .banner {
     height: auto;
   }
 
-  /* line 412, ../sass/layout/Pages/_responsive.scss */
+  /* line 415, ../sass/layout/Pages/_responsive.scss */
   .testimonials {
     height: auto !important;
     position: static !important;
     padding: 5px 0px 40px 0px;
   }
 
-  /* line 417, ../sass/layout/Pages/_responsive.scss */
+  /* line 420, ../sass/layout/Pages/_responsive.scss */
   .banner .testimonials .flexslider .content-testi {
     padding: 0px 30px !important;
   }
 
-  /* line 421, ../sass/layout/Pages/_responsive.scss */
+  /* line 424, ../sass/layout/Pages/_responsive.scss */
   .menu-header .main-menu {
     display: none;
   }
 
-  /* line 427, ../sass/layout/Pages/_responsive.scss */
+  /* line 430, ../sass/layout/Pages/_responsive.scss */
   .menu-bar .logo-header img {
     height: 35px;
     margin-top: 10px;
   }
 
-  /* line 433, ../sass/layout/Pages/_responsive.scss */
+  /* line 436, ../sass/layout/Pages/_responsive.scss */
   .project {
     height: 360px;
   }
-  /* line 435, ../sass/layout/Pages/_responsive.scss */
+  /* line 438, ../sass/layout/Pages/_responsive.scss */
   .project img {
     height: 100% !important;
     width: auto !important;
   }
-  /* line 440, ../sass/layout/Pages/_responsive.scss */
+  /* line 443, ../sass/layout/Pages/_responsive.scss */
   .project .top-over-lay .project-detail {
     padding: 20px;
     margin: 25px auto;
   }
-  /* line 443, ../sass/layout/Pages/_responsive.scss */
+  /* line 446, ../sass/layout/Pages/_responsive.scss */
   .project .top-over-lay .project-detail h1 {
     padding: 0px;
     font-size: 25px;
     padding-bottom: 30px;
   }
-  /* line 448, ../sass/layout/Pages/_responsive.scss */
+  /* line 451, ../sass/layout/Pages/_responsive.scss */
   .project .top-over-lay .project-detail h2 {
     font-size: 20px;
   }
 
-  /* line 456, ../sass/layout/Pages/_responsive.scss */
+  /* line 459, ../sass/layout/Pages/_responsive.scss */
   #project-hero .flexslider .flex-viewport {
     height: 360px;
   }
 
-  /* line 461, ../sass/layout/Pages/_responsive.scss */
+  /* line 464, ../sass/layout/Pages/_responsive.scss */
   .career-box {
     height: auto;
   }
-  /* line 463, ../sass/layout/Pages/_responsive.scss */
+  /* line 466, ../sass/layout/Pages/_responsive.scss */
   .career-box .hal-f-box {
     width: 100%;
   }
-  /* line 466, ../sass/layout/Pages/_responsive.scss */
+  /* line 469, ../sass/layout/Pages/_responsive.scss */
   .career-box .hal-f-box .career-over-ly h4 {
     padding-top: 0px;
   }
 
-  /* line 474, ../sass/layout/Pages/_responsive.scss */
+  /* line 477, ../sass/layout/Pages/_responsive.scss */
   .agent-box .overlay-agent h3 {
     line-height: 125px;
   }
 
-  /* line 479, ../sass/layout/Pages/_responsive.scss */
+  /* line 482, ../sass/layout/Pages/_responsive.scss */
   .section-gap {
     padding: 20px 0px;
   }
 
-  /* line 482, ../sass/layout/Pages/_responsive.scss */
+  /* line 485, ../sass/layout/Pages/_responsive.scss */
   .community-card {
     height: 200px;
   }
-  /* line 485, ../sass/layout/Pages/_responsive.scss */
+  /* line 488, ../sass/layout/Pages/_responsive.scss */
   .community-card .overlay-bx h3 {
     line-height: 200px;
   }
 
-  /* line 492, ../sass/layout/Pages/_responsive.scss */
+  /* line 495, ../sass/layout/Pages/_responsive.scss */
   .logos ul li {
     width: 33.33%;
     float: left;
   }
 
-  /* line 499, ../sass/layout/Pages/_responsive.scss */
+  /* line 502, ../sass/layout/Pages/_responsive.scss */
   footer img {
     display: none;
   }
-  /* line 502, ../sass/layout/Pages/_responsive.scss */
+  /* line 505, ../sass/layout/Pages/_responsive.scss */
   footer .border-right {
     border: none;
   }
-  /* line 506, ../sass/layout/Pages/_responsive.scss */
+  /* line 509, ../sass/layout/Pages/_responsive.scss */
   footer ul {
     margin-bottom: 10px;
   }
-  /* line 509, ../sass/layout/Pages/_responsive.scss */
+  /* line 512, ../sass/layout/Pages/_responsive.scss */
   footer .sub-footer {
     height: auto;
     text-align: center;
     padding-top: 10px;
   }
-  /* line 513, ../sass/layout/Pages/_responsive.scss */
+  /* line 516, ../sass/layout/Pages/_responsive.scss */
   footer .sub-footer p {
     text-align: center;
     line-height: 25px;
   }
-  /* line 517, ../sass/layout/Pages/_responsive.scss */
+  /* line 520, ../sass/layout/Pages/_responsive.scss */
   footer .sub-footer ul {
     float: none;
     text-align: center;
     line-height: 25px;
   }
 
-  /* line 525, ../sass/layout/Pages/_responsive.scss */
+  /* line 528, ../sass/layout/Pages/_responsive.scss */
   .search-form .searchfeild {
     width: 100% !important;
   }
-  /* line 528, ../sass/layout/Pages/_responsive.scss */
+  /* line 531, ../sass/layout/Pages/_responsive.scss */
   .search-form .search-text {
     width: 100% !important;
     height: 45px;
   }
-  /* line 532, ../sass/layout/Pages/_responsive.scss */
+  /* line 535, ../sass/layout/Pages/_responsive.scss */
   .search-form .search-select {
     width: 100% !important;
     margin-left: 0px !important;
   }
-  /* line 536, ../sass/layout/Pages/_responsive.scss */
+  /* line 539, ../sass/layout/Pages/_responsive.scss */
   .search-form .searchaction {
     width: 100% !important;
     margin-left: 0px !important;
     margin-top: 5px;
   }
 
-  /* line 542, ../sass/layout/Pages/_responsive.scss */
+  /* line 545, ../sass/layout/Pages/_responsive.scss */
   .b-x-w {
     width: 100%;
     float: none;
     margin-bottom: 30px;
   }
 
-  /* line 547, ../sass/layout/Pages/_responsive.scss */
+  /* line 550, ../sass/layout/Pages/_responsive.scss */
   .agent-detail-home {
     margin-bottom: 30px;
   }
 
-  /* line 550, ../sass/layout/Pages/_responsive.scss */
+  /* line 553, ../sass/layout/Pages/_responsive.scss */
   .inner {
     height: auto !important;
     background-position: center;
   }
 
-  /* line 554, ../sass/layout/Pages/_responsive.scss */
+  /* line 557, ../sass/layout/Pages/_responsive.scss */
   .form-bx {
     margin-bottom: 20px;
   }
 
-  /* line 558, ../sass/layout/Pages/_responsive.scss */
+  /* line 561, ../sass/layout/Pages/_responsive.scss */
   .each-testimonial .user-testi {
     width: 100%;
   }
-  /* line 561, ../sass/layout/Pages/_responsive.scss */
+  /* line 564, ../sass/layout/Pages/_responsive.scss */
   .each-testimonial .testi-content {
     width: 100%;
   }
-  /* line 563, ../sass/layout/Pages/_responsive.scss */
+  /* line 566, ../sass/layout/Pages/_responsive.scss */
   .each-testimonial .testi-content .name-dt {
     width: 100%;
   }
-  /* line 566, ../sass/layout/Pages/_responsive.scss */
+  /* line 569, ../sass/layout/Pages/_responsive.scss */
   .each-testimonial .testi-content .bt-dt {
     width: 100%;
     margin-top: 20px;
   }
-  /* line 569, ../sass/layout/Pages/_responsive.scss */
+  /* line 572, ../sass/layout/Pages/_responsive.scss */
   .each-testimonial .testi-content .bt-dt button {
     float: left;
   }
 
-  /* line 575, ../sass/layout/Pages/_responsive.scss */
+  /* line 578, ../sass/layout/Pages/_responsive.scss */
   .test-reviw {
     width: 100%;
   }
 
-  /* line 578, ../sass/layout/Pages/_responsive.scss */
+  /* line 581, ../sass/layout/Pages/_responsive.scss */
   .property-card {
     width: 100%;
   }
 
-  /* line 581, ../sass/layout/Pages/_responsive.scss */
+  /* line 584, ../sass/layout/Pages/_responsive.scss */
   .action-bt ul li {
     width: 100%;
     margin-top: 5px;
   }
 
-  /* line 586, ../sass/layout/Pages/_responsive.scss */
+  /* line 589, ../sass/layout/Pages/_responsive.scss */
   .each-project .project-image {
     width: 100%;
     height: 200px;
   }
-  /* line 590, ../sass/layout/Pages/_responsive.scss */
+  /* line 593, ../sass/layout/Pages/_responsive.scss */
   .each-project .project-detail {
     width: 100%;
   }
 
-  /* line 595, ../sass/layout/Pages/_responsive.scss */
+  /* line 598, ../sass/layout/Pages/_responsive.scss */
   .inner-full-banner .postion-form {
     width: 100%;
     left: 0px;
   }
 
-  /* line 601, ../sass/layout/Pages/_responsive.scss */
+  /* line 604, ../sass/layout/Pages/_responsive.scss */
   .thum-slid ul li {
     width: 48%;
   }
 
-  /* line 605, ../sass/layout/Pages/_responsive.scss */
+  /* line 608, ../sass/layout/Pages/_responsive.scss */
   .plans .instalment-card {
     width: 100%;
   }
 
-  /* line 609, ../sass/layout/Pages/_responsive.scss */
+  /* line 612, ../sass/layout/Pages/_responsive.scss */
   .full-button {
     width: 100%;
   }
 
-  /* line 612, ../sass/layout/Pages/_responsive.scss */
+  /* line 615, ../sass/layout/Pages/_responsive.scss */
   .modal {
     width: 100% !important;
   }
 
-  /* line 615, ../sass/layout/Pages/_responsive.scss */
+  /* line 618, ../sass/layout/Pages/_responsive.scss */
   .project-inner {
     width: 100% !important;
   }
 
-  /* line 618, ../sass/layout/Pages/_responsive.scss */
+  /* line 621, ../sass/layout/Pages/_responsive.scss */
   .inner-full-banner {
     height: auto !important;
     overflow: visible !important;
   }
-  /* line 621, ../sass/layout/Pages/_responsive.scss */
+  /* line 624, ../sass/layout/Pages/_responsive.scss */
   .inner-full-banner .postion-form {
     background-color: #000;
   }
 
-  /* line 625, ../sass/layout/Pages/_responsive.scss */
+  /* line 628, ../sass/layout/Pages/_responsive.scss */
   .over-innr-pg {
     position: static !important;
     background-color: #19223D !important;
   }
-  /* line 628, ../sass/layout/Pages/_responsive.scss */
+  /* line 631, ../sass/layout/Pages/_responsive.scss */
   .over-innr-pg .project-inner {
     background-color: #19223D !important;
   }
-  /* line 630, ../sass/layout/Pages/_responsive.scss */
+  /* line 633, ../sass/layout/Pages/_responsive.scss */
   .over-innr-pg .project-inner .top-over-lay {
     width: 100% !important;
+  }
+
+  /* line 638, ../sass/layout/Pages/_responsive.scss */
+  .image-buy-detail {
+    margin-bottom: 10px;
   }
 }

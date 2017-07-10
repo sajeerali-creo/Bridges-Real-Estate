@@ -39,8 +39,9 @@
 
 .image-buy-detail{
 	width:100%;
-	height:340px;
+	height:420px;
 	background-color:#fff;
+	overflow:hidden;
 	img{
 		min-width: 100%;
 		object-fit: cover;
@@ -49,4 +50,137 @@
 }
 .margin-top{
 	margin-top:10px!important;
+}
+
+.buy-agent-card{
+	width:100%;
+	background-color:#fff;
+	border:1px solid rgba(225, 225, 225, 0.73);
+	height:420px;
+	.agent-head{
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+		background-color:#666;
+		img{
+			object-fit: cover;
+			min-width: 100%;
+			height: 100%;
+		}
+	}
+	.agent-detail-sec{
+		padding:15px;
+		h2{
+			color: $navy;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		span{
+			color: #999;
+			font-style: italic;
+			display: block;
+			padding:5px 0px;
+		}
+		.spcial{
+			margin-bottom: 10px;
+			span{
+				color: $navy;
+				font-style: normal;
+				display: block;
+				padding:3px 0px;
+				font-weight: bold;
+				strong{
+					display: inline-block;
+					font-weight: normal;
+					color: $navy;
+				}
+			}
+		}
+		.bt-half{
+			width: 49%;
+			float: left;
+			height: 35px;
+			border:1px solid $navy;
+			color: $navy;
+			background-color:#fff;
+			a{
+				color: $navy;
+				font-size:12px;
+			}
+		}
+		.mg-right-5{
+			margin-right: 5px;
+			background-color:$navy!important;
+			a{
+				color: #fff;
+			}
+		}
+		.bt-number{
+			margin-top: 5px;
+			width: 100%;
+			height: 35px;
+			border:1px solid $navy;
+			color: $navy;
+			background-color:#fff;
+			a{
+				color: $navy;
+				font-size:14px;
+				font-weight: 600;
+			}
+		}
+		
+	}
+}
+
+.facts{
+	height:260px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	ul{
+		margin-top: 10px;
+		li{
+			display: block;
+			width: 100%;
+			color: $navy!important;
+			padding:10px 0px;
+			color: $navy;
+			border-bottom:1px solid #f1f1f1;
+			i{
+				display: inline-block;
+				width: 25px;
+				color: $navy;
+			}
+			strong{
+				width: 80px;
+    			display: inline-block;
+    			color: $navy;
+			}
+
+		}
+	}
+}
+.aminities{
+	height:260px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	color:$navy;
+	.pads{
+		padding:10px 0px;
+	}
+}
+.section-d{
+	button{
+		width: 120px;
+		height: 35px;
+		text-align: center;
+		color: $navy;
+		font-weight: 600;
+		margin-top: 10px;
+		border:1px solid $navy;
+		background-color:#fff;
+		a{
+			color: $navy;
+			font-size: 12px;
+		}
+	}
 }
