@@ -13,6 +13,52 @@
 </head>
 <body class="inner-bg">
 
+<!-- filter -->
+<div class="filter">
+	<a class="modal-trigger" href="#modal1"><img src="images/filter.svg"></a>
+</div>
+ 
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Flter</h4>
+      <div class="filters">
+      	 <div class="input-field col s12">
+		    <select multiple>
+		      <option value="" selected>Property Type</option>
+		      <option value="1">Apartment</option>
+		      <option value="2">Villas</option>
+		      <option value="3">Residential</option>
+		      <option value="4">Retail</option>
+		      <option value="5">Official</option>
+		      <option value="6">Commercial</option>
+		    </select>
+		  </div>
+		    <p class="range-field">
+		      <span>Bed Room</span>
+		      <input type="range" id="test10" min="0" max="100" />
+		    </p>
+
+		    <p class="range-field">
+		      <span>Budget</span>
+		      <input type="range" id="test11" min="0" max="10000" />
+		    </p>
+
+		    <p class="range-field">
+		      <input type="text" placeholder="Size" />
+		    </p>
+
+		    <button><a href="#">Search</a></button>
+		    <button class="cancel-b modal-close"><a href="#">Cncel</a></button>
+
+
+      </div>
+    </div>
+   
+  </div>
+
+
  <!-- Make Enquiry Modal Structure -->
   <div id="modal1" class="modal">
     <div class="modal-content">
@@ -1894,10 +1940,28 @@ $(document).ready(function() {
     });
   </script>
 
- <script>
+<script>
 	 $(document).ready(function() {
 	 $('select').material_select();
 	});
+</script>
+
+<script type="text/javascript">
+$(function(){
+var slider = document.getElementById('test5');
+noUiSlider.create(slider, {
+ start: [20, 80],
+ connect: true,
+ step: 1,
+ range: {
+   'min': 0,
+   'max': 100
+ },
+ format: wNumb({
+   decimals: 0
+ })
+});
+})
 </script>
 
       

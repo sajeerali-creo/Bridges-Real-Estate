@@ -2695,6 +2695,13 @@ footer .links-f ul li:hover {
   border: 1px solid #fff;
 }
 
+/* line 369, ../sass/layout/Pages/_project.scss */
+.top-section-b h2 {
+  color: #19223D;
+  font-size: 22px;
+  font-weight: bold;
+}
+
 /* line 1, ../sass/layout/Pages/_community.scss */
 .property-type {
   background-color: #19223D;
@@ -2739,6 +2746,65 @@ footer .links-f ul li:hover {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 10px;
   margin-top: 20px;
+}
+
+/* line 3, ../sass/layout/Pages/_buy.scss */
+.top-section-b h2 {
+  color: #19223D;
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+}
+/* line 9, ../sass/layout/Pages/_buy.scss */
+.top-section-b span {
+  color: #19223D;
+  padding: 10px 0px;
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 15, ../sass/layout/Pages/_buy.scss */
+.top-section-b .dicri {
+  float: left;
+  width: 100%;
+}
+/* line 19, ../sass/layout/Pages/_buy.scss */
+.top-section-b .refernce-number {
+  width: auto;
+  height: 35px;
+  background-color: #19223D;
+  color: #fff;
+  line-height: 35px;
+  padding: 0px 20px;
+  float: left;
+  margin-right: 5px;
+}
+/* line 29, ../sass/layout/Pages/_buy.scss */
+.top-section-b .id-number {
+  width: auto;
+  height: 35px;
+  background-color: #F15C5C;
+  color: #fff;
+  line-height: 35px;
+  padding: 0px 20px;
+  float: left;
+}
+
+/* line 40, ../sass/layout/Pages/_buy.scss */
+.image-buy-detail {
+  width: 100%;
+  height: 340px;
+  background-color: #fff;
+}
+/* line 44, ../sass/layout/Pages/_buy.scss */
+.image-buy-detail img {
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+/* line 50, ../sass/layout/Pages/_buy.scss */
+.margin-top {
+  margin-top: 10px !important;
 }
 
 /* line 1, ../sass/layout/Pages/_admin.scss */
