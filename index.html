@@ -3,7 +3,8 @@
 <head>
 	<title>Test</title>
 	<!-- style -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/materialize.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
@@ -13,6 +14,9 @@
 	<link rel="stylesheet" href="stylesheets/flexslider.css" type="text/css">
 </head>
 <body>
+
+
+
 
  <!-- Make Enquiry Modal Structure -->
   <div id="modal1" class="modal">
@@ -33,26 +37,43 @@
     </div>
   </div>
 
+   <!-- Quick Contact -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Quick Contact</h4>
+      <div class="b-m">
+      	<form>
+      		<div class="col l12 m12 s12"><input type="text" placeholder="Name" name=""></div>
+      		<div class="col l12 m12 s12"><input type="text" placeholder="Mobile Number" name=""></div>
+      		<div class="col l12 m12 s12"><input type="text" placeholder="E-mail" name=""></div>
+      		<div class="col l12 m12 s12"><textarea placeholder="Message"></textarea></div>
+      		<div class="col l12 m12 s12">
+      			<button class="waves-effect waves-light"><a href="#">Send</a></button>
+      			<button class="cancel modal-close waves-effect waves-light"><a href="#">Cancel</a></button>
+      		</div>
+      	</form>
+      </div>
+    </div>
+  </div>
+
 
 <!-- Quick Contact -->
 <div class="quick-contact">
-	<a href="#"><img src="images/contact.svg"></a>
+	<a class="modal-trigger" data-target="modal2"><img src="images/contact.svg"></a>
 </div>
 
 <!-- Side Navigtion -->
 <ul id="slide-out" class="side-nav">
 	<li><div class="userView">
 	  <div class="background">
-	    <img src="images/community-bg.png">
 	  </div>
 	  <a href="#!user"><img class="circle" src="images/header-logo.svg"></a>
 	  <a href="#!email"><span class="white-text email">Bridges & Allies</span></a>
 	</div></li>
-	<li><a href="#">ABOUT</a></li>
-	<li><a href="#who">&nbsp;&nbsp;WHO WE ARE</a></li>
-	<li><a href="testimonial.html">&nbsp;&nbsp;TESTIMONIAL</a></li>
-	<li><a href="team.html">&nbsp;&nbsp;TEAMS</a></li>
-	<li><a href="contact.html">&nbsp;&nbsp;CONTACT</a></li>
+	<li><a href="#who">WHO WE ARE</a></li>
+	<li><a href="testimonial.html">TESTIMONIAL</a></li>
+	<li><a href="team.html">TEAMS</a></li>
+	<li><a href="contact.html">CONTACT</a></li>
 	<li><a href="buy.html">BUY</a></li>
 	<li><a href="rent.html">RENT</a></li>
 	<li><a href="project.html">PROJECT</a></li>
@@ -60,6 +81,9 @@
 	<li><a href="infoguide.html">INFO GUIDE</a></li>
 	<li><a href="career.html">CAREER</a></li>
 </ul>
+
+
+
 
 
 <!-- Banner -->
@@ -70,7 +94,7 @@
 		<div class="container">
 			<div class="row menu-bar">
 				<div class="col s12">
-					<div class="logo-header"><img src="images/header-logo.svg"></div>
+					<div class="logo-header"><a href="index.html"><img src="images/header-logo.svg"></a></div>
 					<div class="menu-header">
 						<ul id="dropdown1" class="dropdown-content">
 						  <li><a href="#who">WHO WE ARE</a></li>
