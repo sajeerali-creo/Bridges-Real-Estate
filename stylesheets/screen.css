@@ -3348,7 +3348,7 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
   float: left;
   width: calc(100% - 300px);
   background-color: #fff;
-  height: 100vh;
+  min-height: 700px;
   margin-right: 10px;
   padding: 15px;
 }
@@ -3413,6 +3413,13 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 /* line 358, ../sass/layout/Pages/_admin.scss */
 input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
   border-bottom: 1px solid #e1e1e1 !important;
+}
+
+/* line 362, ../sass/layout/Pages/_admin.scss */
+.strong {
+  font-weight: bold;
+  color: #19223D;
+  font-size: 16px;
 }
 
 /*==========  Mobile First Method  ==========*/
