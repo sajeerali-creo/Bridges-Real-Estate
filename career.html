@@ -3,7 +3,7 @@
 <head>
 	<title>Bridges & Allies</title>
 	<!-- style -->
-	<link rel="stylesheet" type="text/css" href="stylesheets/materialize.css">
+	<link rel="stylesheet" href="stylesheets/materialize.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
@@ -611,12 +611,14 @@
 									<div class="col s12 l6 m6"><input type="text" placeholder="E-mail" name=""></div>
 									<div class="col s12 l6 m6"><input type="text" placeholder="Mobie Number" name=""></div>
 									<div class="col s12 l6 m6">
-										<select class="browser-default">
-									    <option value="" disabled selected>Current Location</option>
-									    <option value="1">Option 1</option>
-									    <option value="2">Option 2</option>
-									    <option value="3">Option 3</option>
-									  </select>
+										  <div class="input-field">
+										    <select multiple>
+										      <option value="" selected>Applied For</option>
+										      <option value="1">Option 1</option>
+										      <option value="2">Option 2</option>
+										      <option value="3">Option 3</option>
+										    </select>
+										  </div>
 			  						</div>
 
 			  							<div class="col l12 s12 m12">
@@ -733,59 +735,53 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 
+
 <!-- Push Nav Mobile -->
 <script type="text/javascript">
   $(".button-collapse").sideNav();
 </script>
+<script type="text/javascript">
+	 $('.tap-target').tapTarget('open');
+  $('.tap-target').tapTarget('close');
+</script>
 
-<!-- Model -->
-<script>
+
+ <script>
 $(document).ready(function() {
   // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
   $('.modal-trigger').leanModal();
 });
-</script>
+</script>     
+
+
 
 <!-- Dropdown button -->
 <script type="text/javascript">
 	$(".dropdown-button").dropdown();
 </script>
 
-<!-- Header-show-hide -->
-<script type="text/javascript">
-   $(window).scroll(function() {
-	    if ($(this).scrollTop()>0)
-	     {
-	        $('#header').fadeIn();
-	     }
-	    else
-	     {
-	      $('#header').fadeOut();
-	     }
-	 });
-</script>
-
-<!-- FlexSlider -->
-  <script defer src="js/jquery.flexslider.js"></script>
-
-  <script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-
  <script>
 	 $(document).ready(function() {
 	 $('select').material_select();
 	});
+</script>
+
+<script type="text/javascript">
+$(function(){
+var slider = document.getElementById('test5');
+noUiSlider.create(slider, {
+ start: [20, 80],
+ connect: true,
+ step: 1,
+ range: {
+   'min': 0,
+   'max': 100
+ },
+ format: wNumb({
+   decimals: 0
+ })
+});
+})
 </script>
 
       
